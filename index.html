@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Luis Antonio Cocoletzi Carvajal">
+    <meta name="description" content="Oracle Next Education + Alura Challenge: Encriptador de Texto">
+    <meta name="keywords" content="encriptar, desencriptar, alura, oracle">
+    <title>Encriptador de texto | Challenge ONE: Principiante en programación</title>
+    <link rel="shortcut icon" href="./assets/icons/app-icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+</head>
+<body>
+    <nav id="navbar">
+        <h1 id="navbar__title">Encriptador de Texto</h1>
+        <img id="navbar_logo" 
+            src="./assets/images/oracle-alura_logo.svg" 
+            alt="Logo de Oracle + Alura Latam">
+    </nav>
+    <main class="container">
+        <div class="editor">
+            <fieldset>
+                <textarea class="editor__textbox" name="input-text" id="input-text" 
+                    placeholder="Escribe algo aquí..."></textarea>
+                <textarea class="editor__textbox" name="output-text" id="output-text" 
+                    readonly placeholder="¡Aquí aparecerá el resultado!"></textarea>
+                <span id="copy-paste" onclick="copyToClipboard()">
+                    <img src="./assets/icons/copypaste.png" alt="Copy text option">
+                    <div id="copied-tooltip" class="hidden">
+                        <p>Copiado</p>
+                    </div>
+                </span>
+            </fieldset>
+        </div>
+        <div class="controls">
+            <div class="controls_input">
+                <button id="btn-encrypt" class="btn" onclick="encrypt()">Encriptar</button>
+                <button id="btn-decrypt" class="btn" onclick="decrypt()">Desencriptar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Creado por: Luis Antonio Cocoletzi Carvajal</p>
+        <ul class="socialmedia-list">
+            <li>
+                <a href="https://www.linkedin.com/in/antonio-cocoletzi" target="_blank">
+                    <img src="./assets/icons/linkedin.png" alt="" srcset="">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/@cocoletziantonio" target="_blank">
+                    <img src="./assets/icons/tik-tok.png" alt="" srcset="">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/antoncoco" target="_blank">
+                    <img src="./assets/icons/github.png" alt="" srcset="">
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/copy.js"></script>
+</body>
+</html>

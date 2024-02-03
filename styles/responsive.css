@@ -1,0 +1,81 @@
+@media (max-width: 991px) {
+    .editor > fieldset {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .editor__textbox {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    #input-text {
+        width: 92.5%;
+        margin-right: 0;
+    }
+    
+    #output-text {
+        margin-left: 0;
+    }
+
+    #copy-paste {
+        top: 52%;
+        right: 30px;
+    }
+
+    .controls {
+        margin: 5px 4.5%;
+    }
+}
+
+@media (max-height: 578px) {
+    .editor > fieldset {
+        margin-top: 30px;
+    }
+
+    .controls_input {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    #navbar {
+        padding-right: 0;
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    #navbar__title {
+        display: none;
+    }
+
+    .container {
+        min-height: calc(100vh - 155px);
+    }
+
+    .editor > fieldset {
+        margin-top: 20px;
+    }
+
+    .controls_input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        width: 90%;
+        height: 40px;
+    }
+
+    #btn-decrypt {
+        margin-left: 0;
+    }
+
+    footer {
+        padding: 0 25px;
+    }
+}
+
